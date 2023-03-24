@@ -7,13 +7,14 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-@TableName("t_order")
+@TableName("t_order_item")
 @Data
-public class Order {
+public class OrderItem {
+    //当配置了shardingsphere-jdbc的分布式序列时，自动使用shardingsphere-jdbc的分布式序列
     @TableId(type = IdType.AUTO)
-//    @TableId(type = IdType.ASSIGN_ID) // 1638355585655230466|1638355862030393346  分布式Id
     private Long id;
     private String orderNo;
     private Long userId;
-    private BigDecimal amount;
+    private BigDecimal price;
+    private Integer count;
 }

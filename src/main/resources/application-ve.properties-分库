@@ -13,15 +13,15 @@ spring.shardingsphere.datasource.names=server-user,server-order
 
 # \u914D\u7F6E\u7B2C 1 \u4E2A\u6570\u636E\u6E90
 spring.shardingsphere.datasource.server-user.type=com.zaxxer.hikari.HikariDataSource
-spring.shardingsphere.datasource.server-user.driver-class-name=com.mysql.jdbc.Driver
-spring.shardingsphere.datasource.server-user.jdbc-url=jdbc:mysql://192.168.10.100:3301/db_user
+spring.shardingsphere.datasource.server-user.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.shardingsphere.datasource.server-user.jdbc-url=jdbc:mysql://hadoop100:3301/db_user
 spring.shardingsphere.datasource.server-user.username=root
 spring.shardingsphere.datasource.server-user.password=123456
 
 # \u914D\u7F6E\u7B2C 2 \u4E2A\u6570\u636E\u6E90
 spring.shardingsphere.datasource.server-order.type=com.zaxxer.hikari.HikariDataSource
-spring.shardingsphere.datasource.server-order.driver-class-name=com.mysql.jdbc.Driver
-spring.shardingsphere.datasource.server-order.jdbc-url=jdbc:mysql://192.168.10.100:3302/db_order
+spring.shardingsphere.datasource.server-order.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.shardingsphere.datasource.server-order.jdbc-url=jdbc:mysql://hadoop100:3302/db_order
 spring.shardingsphere.datasource.server-order.username=root
 spring.shardingsphere.datasource.server-order.password=123456
 

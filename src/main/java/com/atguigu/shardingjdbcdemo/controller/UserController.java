@@ -13,11 +13,11 @@ import java.util.List;
 @RequestMapping("/userController")
 public class UserController {
 
-    @Autowired
-    private UserMapper userMapper;
-
-    @GetMapping("selectAll")
-    public List<User> selectAll(){
-        return userMapper.selectList(null);
-    }
+//    @Autowired
+//    private UserMapper userMapper;
+//
+//    @GetMapping("selectAll")
+//    public List<User> selectAll(){
+//        return userMapper.selectList(null);
+//    }
 }
